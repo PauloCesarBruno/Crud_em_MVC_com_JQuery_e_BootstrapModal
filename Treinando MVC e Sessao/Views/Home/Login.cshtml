@@ -7,6 +7,7 @@
 <link rel="icon" href="~/img/Icone.ico" />
 
 <style>
+
     #login {
         -webkit-perspective: 1000px;
         -moz-perspective: 1000px;
@@ -61,7 +62,7 @@
             }
 
     #inner-wrapper, #contact-us .contact-form, #contact-us .our-address {
-        color: #1d1d1d;
+        color: white; /*Moda a cor do FontAwesome e dos paragrafos <p>*/
         font-size: 19px;
         line-height: 1.7em;
         font-weight: 300;
@@ -72,18 +73,18 @@
     }
 </style>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="icon" href="~/img/Icone.ico" />
 
 <div class="container">
     <br />
-    <h2>Tela de Login</h2>
+    <h2 style="font-size: 40px; font-family: 'Monotype Corsiva'"; >Tela de Login</h2>
     <hr />
 </div>
 <div class="col-md-4 col-md-offset-4" id="login">
-    <section style="background-color:lightgrey" id="inner-wrapper" class="login">
+    <!--Abaixo Muda a cor do article-->
+    <section style="background-color:black" id="inner-wrapper" class="login">
         <article>
             <form asp-controller="Home" asp-action="Login" method="post">
 
