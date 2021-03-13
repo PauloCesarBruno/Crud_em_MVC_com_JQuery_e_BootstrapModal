@@ -21,6 +21,7 @@ namespace Treinando_MVC_e_Sessao
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseIISIntegration();
                 });
     }
 }
