@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Treinando_MVC_e_Sessao</RootNamespace>
+    <UserSecretsId>f0f4f52c-3d36-432a-8c84-cf1323b00654</UserSecretsId>
     </PropertyGroup>
 
   <ItemGroup>
