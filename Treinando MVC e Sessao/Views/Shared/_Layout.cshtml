@@ -48,7 +48,7 @@
             let nome = '@HttpContextAccessor.HttpContext.Session.GetString("NomeUsuaio")';
             if (nome != "") {
                 let divNome = document.getElementById('logado');
-                divNome.innerHTML = "Logado(a): " + nome + " <a href = '../Home/Login/0'><Strong><em>(Sair)</strong></em></a>";
+                divNome.innerHTML = "Logado(a): " + nome + " <a href = '../Home/Login/0'><strong><em>(Sair)</strong></em></a>";
                 divNome.style = "color: red; padding-top: -15px; font-size: 12px;";
             }
             else {
