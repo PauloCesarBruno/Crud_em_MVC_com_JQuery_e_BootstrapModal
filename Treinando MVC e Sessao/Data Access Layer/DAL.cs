@@ -25,7 +25,9 @@ namespace Treinando_MVC_e_Sessao.Data_Access_Layer
             conn.Close();
         }
 
+#pragma warning disable IDE0044 // Adicionar modificador somente leitura
         private SqlParameterCollection Colecao = new SqlCommand().Parameters;
+#pragma warning restore IDE0044 // Adicionar modificador somente leitura
 
         public void LimparParametro()
         {
@@ -75,8 +77,12 @@ namespace Treinando_MVC_e_Sessao.Data_Access_Layer
                 {
                     cmd.Parameters.Add(new SqlParameter(param.ParameterName, param.Value));
                 }
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 DataTable dt = new DataTable();
+#pragma warning restore IDE0090 // Usar 'new(...)'
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+#pragma warning restore IDE0090 // Usar 'new(...)'
                 da.Fill(dt);
                 return dt;
             }
@@ -90,9 +96,15 @@ namespace Treinando_MVC_e_Sessao.Data_Access_Layer
         {
             try
             {
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 DataTable dt = new DataTable();
+#pragma warning restore IDE0090 // Usar 'new(...)'
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 SqlCommand cmd = new SqlCommand(sql, Conexao());
+#pragma warning restore IDE0090 // Usar 'new(...)'
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+#pragma warning restore IDE0090 // Usar 'new(...)'
                 da.Fill(dt);
                 return dt;
             }
@@ -107,9 +119,13 @@ namespace Treinando_MVC_e_Sessao.Data_Access_Layer
         {
             try
             {
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 DataTable dt = new DataTable();
+#pragma warning restore IDE0090 // Usar 'new(...)'
                 cmd.Connection = Conexao();
+#pragma warning disable IDE0090 // Usar 'new(...)'
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+#pragma warning restore IDE0090 // Usar 'new(...)'
                 da.Fill(dt);
                 return dt;
             }
