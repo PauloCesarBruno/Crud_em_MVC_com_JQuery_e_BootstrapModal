@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using Treinando_MVC_e_Sessao.Models;
-//================================
 
 namespace Treinando_MVC_e_Sessao.Controllers
 {
